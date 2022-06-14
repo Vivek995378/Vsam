@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Vsam</string>
+    <string name="app_mode">day</string>
+    <string name="terms"><u>Terms</u></string>
+    <string name="privacy_policy"><u>Privacy Policy</u></string>
+
+    <string name="releasePassword">vsamRelease123@!</string>
+
+    <string name="facebook_app_id">283728679919955</string>
+    <string name="fb_login_protocol_scheme">fb283728679919955</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    <string name="action_settings">Settings</string>-->
+    <!--    <string name="hello_world">Hello world!</string>-->
+    <!--    <string name="date_label_set">Press the button to set the date</string>-->
+    <!--    <string name="date_button_set">Set Date</string>-->
+    <!--    <string name="date_view_set">The Date is: </string>-->
+    <!--    <string name="date_selected"></string>-->
+</resources>

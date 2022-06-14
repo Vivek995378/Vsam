@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/relativeLayout"
+        android:scaleType="fitXY"
+        android:src="@drawable/demoimage" />
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="backStatistics"
+        android:padding="8dp"
+        android:src="@drawable/ic_back_arrow" />
+
+    <TextView
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Done"
+        android:textColor="@color/textColor"
+        android:background="@drawable/white_capsule"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Post"
+        android:textColor="@color/whiteColor"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fragmentTabColor"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.6"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/black_box"
+            android:layout_alignTop="@id/etCaption"
+            android:layout_alignBottom="@id/etCaption"/>
+
+        <EditText
+            android:id="@+id/etCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="200dp"
+            android:layout_margin="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="24dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:gravity="start"
+            android:hint="Never sacrifice three things: family, love, and or yourself. I'm an original and that's perfection in itself."
+            android:textColor="@color/fragmentTextColor"
+            android:textColorHint="@color/fragmentTextColor"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:layout_alignTop="@id/etCaption"
+            android:layout_alignBottom="@id/etCaption"
+            android:layout_alignParentEnd="true"
+            android:background="@color/whiteColor"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

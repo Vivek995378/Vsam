@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/fragmentBgColor"
+    tools:context=".activity.SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="start">
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:padding="8dp"
+                android:onClick="backEditProfile"
+                android:src="@drawable/ic_back_arrow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/backArrow"
+                android:textColor="@color/whiteColor"
+                android:text="Setting"
+                android:layout_marginTop="13dp"
+                android:padding="8dp"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@color/transparent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/black_box"
+                    android:drawableRight="@drawable/ic_right_arrow"
+                    android:drawablePadding="24dp"
+                    android:onClick="openProfileSettings"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Followings"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/black_box"
+                    android:drawableRight="@drawable/ic_right_arrow"
+                    android:drawablePadding="24dp"
+                    android:onClick="openProfileSettings"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="Profile Setting"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/black_box"
+                    android:drawableRight="@drawable/ic_right_arrow"
+                    android:drawablePadding="24dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="Privacy"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/black_box"
+                    android:drawableRight="@drawable/ic_right_arrow"
+                    android:drawablePadding="24dp"
+                    android:gravity="center_vertical"
+                    android:onClick="openNotificationSettings"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="Notification"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/black_box"
+                    android:drawableRight="@drawable/ic_right_arrow"
+                    android:drawablePadding="24dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="Message"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/black_box"
+                    android:drawableRight="@drawable/ic_right_arrow"
+                    android:drawablePadding="24dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="Challenges Setting"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/black_box"
+                    android:drawableRight="@drawable/ic_right_arrow"
+                    android:drawablePadding="24dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="Activity"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

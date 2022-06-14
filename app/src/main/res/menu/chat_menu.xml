@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/block"
+        android:title="Block"
+        android:icon="@drawable/ic_block"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/mute"
+        android:title="Mute"
+        android:icon="@drawable/ic_mute"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/report"
+        android:title="Report"
+        android:icon="@drawable/ic_report"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/notification"
+        android:title="Notifications"
+        android:icon="@drawable/ic_notification"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/messageTime"
+        android:title="Message Time"
+        android:icon="@drawable/ic_time"
+        app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragmentBgColor"
+    tools:context=".activity.UserMessageActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/messagetoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:popupTheme="@style/MyPopupTheme"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:padding="8dp"
+                android:onClick="backMessages"
+                android:src="@drawable/ic_back_arrow"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImage"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/backArrow"
+                android:background="@android:color/transparent"
+                android:src="@drawable/pic" />
+
+            <TextView
+                android:id="@+id/tv_messageUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/profileImage"
+                android:text="Vivek"
+                android:textColor="@color/whiteColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_messageStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_messageUsername"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/profileImage"
+                android:text="Online"
+                android:textColor="@color/postTextColor"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imgCall"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_call" />
+
+            <ImageView
+                android:id="@+id/imgVideocall"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:layout_toStartOf="@id/imgCall"
+                android:src="@drawable/ic_videocall" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linearLayoutBottom"
+        android:layout_below="@id/messagetoolbar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_msg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/theme_color_filled_box"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/emoji_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:padding="6dp"
+                android:src="@drawable/ic_emoji" />
+
+            <EditText
+                android:id="@+id/edt_typeMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/cardColor"
+                android:layout_toEndOf="@id/emoji_btn"
+                android:layout_marginEnd="100dp"
+                android:layout_marginTop="2dp"
+                android:textCursorDrawable="@drawable/white_color_cursor"
+                android:hint="Type a message"
+                android:textSize="12sp"
+                android:textColor="@color/whiteColor"
+                android:textColorHint="@color/highlightTextColor" />
+
+            <ImageView
+                android:id="@+id/img_camera"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="6dp"
+                android:layout_toStartOf="@id/img_sendMsg"
+                android:src="@drawable/ic_camera3" />
+
+            <ImageView
+                android:id="@+id/img_sendMsg"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="2dp"
+                android:layout_alignParentEnd="true"
+                android:padding="5dp"
+                android:src="@drawable/ic_send"/>
+
+        </RelativeLayout>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerInside"
+            android:background="@color/linkedinColor"
+            app:shapeAppearanceOverlay="@style/Circular"
+            android:src="@drawable/ic_mike"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

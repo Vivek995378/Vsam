@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.vsam">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VSAM"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.app.vsam.activity.BadgeActivity"></activity>
+        <activity android:name="com.app.vsam.activity.StoryActivity" />
+        <activity android:name="com.app.vsam.activity.LocationActivity" />
+        <activity android:name="com.app.vsam.activity.CaptionActivity" />
+        <activity android:name="com.app.vsam.activity.EditActivity" />
+        <activity android:name="com.app.vsam.activity.TagActivity" />
+        <activity android:name="com.app.vsam.activity.TrialActivity">
+
+        </activity>
+        <activity android:name="com.app.vsam.activity.AllStatsActivity" />
+        <activity android:name="com.app.vsam.activity.UserInformationGoogleActivity" />
+        <activity android:name="com.app.vsam.activity.UserInformationPhoneActivity" />
+        <activity android:name="com.app.vsam.login.SignupOtpActivity" />
+        <activity android:name="com.app.vsam.login.SignupActivity" />
+        <activity android:name="com.app.vsam.login.LoginTwoActivity" />
+        <activity android:name="com.app.vsam.activity.StatisticsActivity" />
+        <activity android:name="com.app.vsam.activity.ChartActivity" />
+        <activity android:name="com.app.vsam.activity.FollowerActivity" />
+        <activity android:name="com.app.vsam.activity.FollowingActivity" />
+        <activity android:name="com.app.vsam.activity.NotificationSettingsActivity" />
+        <activity android:name="com.app.vsam.activity.ProfileSettingsActivity" />
+        <activity android:name="com.app.vsam.activity.SettingsActivity" />
+        <activity android:name="com.app.vsam.activity.ReelsActivity" />
+        <activity android:name="com.app.vsam.activity.MessagesPrivacyActivity" />
+        <activity android:name="com.app.vsam.activity.MessagesSettingsActivity" />
+        <activity android:name="com.app.vsam.activity.MutedUsersActivity" />
+        <activity android:name="com.app.vsam.activity.BlockedUserActivity" />
+        <activity android:name="com.app.vsam.activity.UserMessageActivity" />
+        <activity android:name="com.app.vsam.activity.NotificationActivity" />
+        <activity android:name="com.app.vsam.activity.MessengerActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCk_UwLXsUEceQ69sjhyhav3UlJAyj2GC0" />
+
+        <activity android:name="com.app.vsam.activity.EditProfile" />
+        <activity
+            android:name="com.app.vsam.activity.HomeActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.app.vsam.webView.WebViewActivity" />
+        <activity
+            android:name="com.app.vsam.login.LoginActivity"
+            android:label="@string/app_name" />
+        <activity android:name="com.app.vsam.splash.SplashActivity" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+
+    </application>
+
+</manifest>

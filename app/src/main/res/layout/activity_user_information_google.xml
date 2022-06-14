@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fragmentTabColor"
+    tools:context=".activity.UserInformationGoogleActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/userBackBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:onClick="finishUserInfo"
+        android:src="@drawable/ic_back_arrow" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userBackBtn">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp">
+
+                <ImageView
+                    android:id="@+id/userprofilephoto"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/ic_default_user"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/addprofile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/edit_profile"
+                    app:layout_constraintBottom_toBottomOf="@+id/userprofilephoto"
+                    app:layout_constraintEnd_toEndOf="@+id/userprofilephoto"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/userprofilephoto"
+                    app:layout_constraintTop_toTopOf="@+id/userprofilephoto"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Profile Picture"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/highlightTextColor"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/gray_border_box_black_bg"
+                android:hint="Username"
+                android:inputType="text"
+                android:maxLength="17"
+                android:paddingStart="16dp"
+                android:textColor="@color/whiteColor"
+                android:textColorHint="@color/highlightTextColor"
+                android:textCursorDrawable="@drawable/white_color_cursor"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/createPassword"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/gray_border_box_black_bg"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLength="17"
+                android:paddingStart="16dp"
+                android:textColor="@color/whiteColor"
+                android:textColorHint="@color/highlightTextColor"
+                android:textCursorDrawable="@drawable/white_color_cursor"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/confirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/gray_border_box_black_bg"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:maxLength="17"
+                android:paddingStart="16dp"
+                android:textColor="@color/whiteColor"
+                android:textColorHint="@color/highlightTextColor"
+                android:textCursorDrawable="@drawable/white_color_cursor"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="56dp"
+                android:paddingBottom="2dp"
+                android:background="@drawable/button_gradient"
+                android:onClick="enterHomeActivity"
+                android:textSize="18sp"
+                android:text="sign up"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColor" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

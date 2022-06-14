@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragmentBgColor">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/demoimage" />
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="backStatistics"
+        android:padding="8dp"
+        android:src="@drawable/ic_back_arrow" />
+
+    <TextView
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Done"
+        android:textColor="@color/textColor"
+        android:background="@drawable/white_capsule"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Post"
+        android:textColor="@color/whiteColor"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/white_border_black_box"
+        android:layout_alignTop="@id/etLocation"
+        android:layout_alignBottom="@id/etLocation"/>
+
+    <EditText
+        android:id="@+id/etLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="86dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_below="@id/backArrow"
+        android:textColor="@color/whiteColor"
+        android:textColorHint="@color/whiteColor"
+        android:textSize="16sp"
+        android:hint="Type location"
+        android:drawableEnd="@drawable/ic_location2"/>
+
+</RelativeLayout>

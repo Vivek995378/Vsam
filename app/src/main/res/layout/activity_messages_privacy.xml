@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/fragmentBgColor"
+    tools:context=".activity.MessagesPrivacyActivity">
+
+    <RelativeLayout
+        android:id="@+id/messagePrivacyToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="start">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:padding="8dp"
+            android:onClick="backMessages"
+            android:src="@drawable/ic_back_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/backArrow"
+            android:textColor="@color/whiteColor"
+            android:text="Message Privacy"
+            android:layout_marginTop="13dp"
+            android:padding="8dp"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messagePrivacyToolbar"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvLastSeen"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:drawableLeft="@drawable/ic_time"
+            android:drawableRight="@drawable/ic_right_arrow"
+            android:background="@drawable/black_box"
+            android:drawablePadding="24dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/fragmentTextColor"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Last seen" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_read"
+            android:drawableRight="@drawable/ic_right_arrow"
+            android:background="@drawable/black_box"
+            android:drawablePadding="24dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/fragmentTextColor"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Read Messages" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_time2"
+            android:drawableRight="@drawable/ic_right_arrow"
+            android:background="@drawable/black_box"
+            android:drawablePadding="24dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/fragmentTextColor"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Message time" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_group"
+            android:drawableRight="@drawable/ic_right_arrow"
+            android:background="@drawable/black_box"
+            android:drawablePadding="24dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/fragmentTextColor"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Group" />
+
+    </LinearLayout>
+
+</RelativeLayout>

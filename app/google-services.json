@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "496226956627",
+    "project_id": "vsam-networks",
+    "storage_bucket": "vsam-networks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496226956627:android:cc1bef4a004e68b7a6dda6",
+        "android_client_info": {
+          "package_name": "com.app.vsam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "496226956627-ogvqfo3qfrjg570fo9gu656f7ha5rkbr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.vsam",
+            "certificate_hash": "5006c2e38d66da8ef2246dfdc94586921d162d2b"
+          }
+        },
+        {
+          "client_id": "496226956627-il91fsh56dlki9u2j2ccmvf2d73va6t3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXZTRTegoRH4iQ5QMLajsH_aOd8gy-JhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "496226956627-il91fsh56dlki9u2j2ccmvf2d73va6t3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

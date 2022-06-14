@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:background="@color/fragmentBgColor"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="3dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/pic"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/profileImage"
+            android:layout_toStartOf="@id/imageView"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/whiteColor"
+            android:textStyle="bold"
+            android:text="James_9"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/profileImage"
+            android:layout_toStartOf="@id/imageView"
+            android:layout_below="@id/tvUsername"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/postTextColor"
+            android:text="Tagged you in Flash."
+            android:textSize="12dp"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="2dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/picc"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/RoundedSquare2"
+            app:strokeColor="#353535"
+            app:strokeWidth="2dp" />
+    </RelativeLayout>
+</RelativeLayout>

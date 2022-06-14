@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragmentBgColor"
+    tools:context=".activity.MessagesSettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/messageSettingToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="16dp"
+            android:padding="8dp"
+            android:onClick="backMessages"
+            android:src="@drawable/ic_back_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/backArrow"
+            android:textColor="@color/whiteColor"
+            android:text="Messages"
+            android:layout_marginTop="14dp"
+            android:padding="8dp"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messageSettingToolbar"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvPrivacy"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:drawableLeft="@drawable/ic_privacy_policy"
+            android:drawableRight="@drawable/ic_right_arrow"
+            android:background="@drawable/black_box"
+            android:drawablePadding="24dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/postTextColor"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Privacy" />
+
+        <TextView
+            android:id="@+id/tvBlock"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_block"
+            android:drawableRight="@drawable/ic_right_arrow"
+            android:background="@drawable/black_box"
+            android:drawablePadding="24dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/postTextColor"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Block" />
+
+        <TextView
+            android:id="@+id/tvMute"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_mute"
+            android:drawableRight="@drawable/ic_right_arrow"
+            android:background="@drawable/black_box"
+            android:drawablePadding="24dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/postTextColor"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Mute" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_notification"
+            android:drawableRight="@drawable/ic_right_arrow"
+            android:background="@drawable/black_box"
+            android:drawablePadding="24dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/postTextColor"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Notification" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_help"
+            android:drawableRight="@drawable/ic_right_arrow"
+            android:background="@drawable/black_box"
+            android:drawablePadding="24dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/postTextColor"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Help" />
+
+    </LinearLayout>
+
+</RelativeLayout>

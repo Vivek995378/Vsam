@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_alignParentTop="true">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/postUserProfile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/piccc"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/highlightTextColor"
+            app:shapeAppearanceOverlay="@style/Circular" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/postUserProfile"
+            android:text="krista_07"
+            android:textSize="18sp"
+            android:textColor="@color/whiteColor"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView8"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/postUserProfile"
+            android:drawableStart="@drawable/ic_location"
+            android:drawablePadding="4dp"
+            android:text="New Delhi"
+            android:textColor="@color/postTextColor"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_more" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="400dp"
+        android:minHeight="200dp"
+        android:layout_below="@id/relativeLayout"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pic" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView1"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="4dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_heart" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="4dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/imageView5"
+            android:src="@drawable/ic_comment" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="4dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/imageView6"
+            android:src="@drawable/ic_share" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="4dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_save_white" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView5"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView8"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:padding="1dp"
+                android:background="@drawable/pic"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/Circular"
+                app:strokeColor="@color/whiteColor"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView9"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:padding="1dp"
+                android:background="@drawable/picc"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/Circular"
+                app:strokeColor="@color/whiteColor"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView10"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:padding="1dp"
+                android:background="@drawable/piccc"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/Circular"
+                app:strokeColor="@color/whiteColor"
+                app:strokeWidth="1dp" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/imageView10"
+                android:text="Liked by"
+                android:textSize="12sp"
+                android:textColor="@color/postTextColor" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/tv1"
+                android:text="altamash_06"
+                android:textSize="12sp"
+                android:textColor="@color/whiteColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/tv2"
+                android:text="and"
+                android:textSize="12sp"
+                android:textColor="@color/postTextColor" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/tv3"
+                android:text="75 others."
+                android:textSize="12sp"
+                android:textColor="@color/whiteColor"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_below="@id/relativeLayout2"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:lineHeight="18dp"
+                android:maxLines="3"
+                android:textSize="12sp"
+                android:text="Please don’t consider my kindness as my weakness
+The beast in me is sleeping not dead."
+                android:textColor="@color/postTextColor"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeLayout3"
+            android:layout_marginTop="2dp"
+            android:textSize="12sp"
+            android:text="2h ago"
+            android:textColor="@color/highlightTextColor"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

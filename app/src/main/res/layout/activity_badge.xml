@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragmentBgColor"
+    tools:context=".activity.BadgeActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImg"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/pic" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toStartOf="@id/badgeImg"
+            android:layout_toEndOf="@id/userImg"
+            app:cardBackgroundColor="@color/hintTextColor"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp">
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/transparent"
+                android:layout_gravity="center"
+                android:drawableEnd="@drawable/ic_search_white"
+                android:hint="Challenges"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:singleLine="true"
+                android:textColor="@color/whiteColor"
+                android:textColorHint="@color/whiteColor"
+                android:textCursorDrawable="@drawable/white_color_cursor"
+                android:textSize="14sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/badgeImg"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:paddingBottom="8dp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/badge1" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

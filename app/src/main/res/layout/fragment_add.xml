@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragmentBgColor">
+
+    <com.camerakit.CameraKitView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:keepScreenOn="true"
+        app:camera_facing="back"
+        app:camera_flash="auto"
+        app:camera_focus="continuous"
+        app:camera_permissions="camera" >
+    </com.camerakit.CameraKitView>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!--        android:layout_marginTop="24dp"-->
+    <!--        android:layout_below="@id/tabLayout"/>-->
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:padding="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_back_arrow_white"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="8dp"
+        app:tabSelectedTextColor="#ffffff"
+        app:tabTextColor="#99ffffff"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@style/tabCustomStyle"
+        app:tabIndicatorColor="@android:color/transparent"/>
+
+    <!--        app:tabTextAppearance="@font/montserrat" />-->
+
+</RelativeLayout>

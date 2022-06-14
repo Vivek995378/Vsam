@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/fragmentBgColor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_block"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        app:strokeColor="@color/whiteColor"
+        app:strokeWidth="0.5dp"
+        app:shapeAppearanceOverlay="@style/Circular"
+        android:padding="2dp"
+        android:background="@drawable/pic" />
+
+    <TextView
+        android:id="@+id/tv_blockName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/img_block"
+        android:text="vivek_ooo1"
+        android:textColor="@color/whiteColor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/tv_blockUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_block"
+        android:layout_below="@id/tv_blockName"
+        android:layout_marginStart="4dp"
+        android:text="Vivek"
+        android:textColor="@color/highlightTextColor"/>
+
+    <Button
+        android:id="@+id/btn_following"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_gradient"
+        android:layout_alignParentEnd="true"
+        android:text="Unfollow"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

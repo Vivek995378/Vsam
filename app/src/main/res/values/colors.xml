@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F57600</color>
+    <color name="colorPrimaryDark">#F57600</color>
+    <color name="colorAccent">#E4DFDF</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="greenColor">#297308</color>
+    <color name="redColor">#EE1707</color>
+    <color name="color1">#0F14D6</color>
+    <color name="color2">#C82540</color>
+
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="highlightTextColor">#ADAEB1</color>
+    <color name="postTextColor">#E1DEDE</color>
+    <color name="fbColor">#4267B2</color>
+    <color name="linkedinColor">#1678FA</color>
+    <color name="btnColor">#BC587A</color>
+    <color name="textColor">#000000</color>
+    <color name="hintTextColor">#282727</color>
+    <color name="iconColor">#ffffff</color>
+    <color name="backButtonColorGrayAndWhite">#FFFFFF</color>
+    <color name="toolbarColor">#515151</color>
+    <color name="cardColor">#424242</color>
+    <color name="loginBackColor">#000000</color>
+    <color name="innerFilledColor">#F5F5F5</color>
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="cornerColor">#d34267</color>
+    <color name="lightSkyblue">#D1EEFD</color>
+    <color name="fragmentBgColor">#1A1A1A</color>
+    <color name="fragmentTabColor">#222121</color>
+    <color name="fragmentTextColor">#E1DEDE</color>
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#131313</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
